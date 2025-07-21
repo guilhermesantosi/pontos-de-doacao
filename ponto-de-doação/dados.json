@@ -1,0 +1,44 @@
+[
+  {
+    "nome": "bahia",
+    "endereco": "rua-alcobaça",
+    "tipo": "roupa",
+    "cidade": "valença"
+  },
+  {
+    "nome": "bahia",
+    "endereco": "rua-alcobaça",
+    "tipo": "roupa",
+    "cidade": "são paulo"
+  },
+  {
+    "nome": "xique-xique",
+    "endereco": "rua-alcobaça",
+    "tipo": "roupa",
+    "cidade": "valença"
+  },
+  {
+    "nome": "bahia",
+    "endereco": "rua-alcobaça",
+    "tipo": "Alimentos",
+    "cidade": "valença"
+  },
+  {
+    "nome": "bar da lora",
+    "endereco": "rua-alcobaça",
+    "tipo": "Roupas",
+    "cidade": "rio de janeiro"
+  },
+  {
+    "nome": "igreja bom fim",
+    "endereco": "rua alcobala",
+    "tipo": "Alimentos",
+    "cidade": "rio grande do norte"
+  },
+  {
+    "nome": "pé de galinha",
+    "endereco": "xique xique",
+    "tipo": "Roupas",
+    "cidade": "valença"
+  }
+]

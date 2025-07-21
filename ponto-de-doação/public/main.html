@@ -1,0 +1,28 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontos de Doação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pontos de Doação</h1>
+  
+      
+  <div class="pesquisa">
+     <input type="text" id="buscaTermo" placeholder="Buscar por nome ou cidade...">
+     <button type="submit" class="bsc">Buscar</button>
+  </div>
+  <select class="filtro"  id="filtroTipo">
+    <option value="">Todos</option>
+    <option value="alimentos">Alimentos</option>
+    <option value="roupas">Roupas</option>
+    
+ </select>
+  <button onclick="window.location.href='cadastro.html'">Cadastrar novo ponto</button>
+
+  <div id="lista-locais"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

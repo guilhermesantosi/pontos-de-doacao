@@ -1,0 +1,57 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontos de Doação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastrar Novo Local de Doação</h1>
+  <form id="formularioCadastro">
+    <input type="text" name="nome" placeholder="Nome do local" required>
+    <input type="text" name="endereco" placeholder="Endereço" required>
+    <select name="tipo" required>
+       <option value="">Tipo de doação</option>
+       <option value="Roupas">Roupas</option>
+       <option value="Alimentos">Alimentos</option>
+    </select>
+
+    <input type="text" name="cidade" placeholder="Cidade" required>
+    <button type="submit">Enviar</button>
+  </form>
+  <button onclick="window.location.href='main.html'">Voltar</button>
+
+  <script>
+    document.getElementById('formularioCadastro').addEventListener('submit', async function(event) {
+      event.preventDefault();
+      const formData = new FormData(this);
+      const dados = Object.fromEntries(formData.entries());
+
+      if (!dados.nome.trim()) {
+      alert('Por favor, preencha o nome do local.');
+      return;
+    }
+    if (!dados.endereco.trim()) {
+      alert('Por favor, preencha o endereço.');
+      return;
+    }
+    if (!dados.tipo) {
+      alert('Por favor, selecione o tipo de doação.');
+      return;
+    }
+    if (!dados.cidade.trim()) {
+      alert('Por favor, preencha a cidade.');
+      return;
+    }
+
+      await fetch('/api/locais', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(dados)
+      });
+
+      window.location.href = 'main.html';
+    });
+  </script>
+</body>
+</html>

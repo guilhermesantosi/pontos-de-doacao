@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+}
+
+input, button{
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form select{
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 95%;
+  background-color: white;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+
+.pesquisa{
+    display: flex;
+    gap:10px;
+    width: 500px;
+    margin: auto;
+    
+}
+
+.bsc{
+  width: 20%;
+  background-color: rgb(90, 139, 247);
+  color: white;
+  font-weight: bolder;
+}
+
+
+.bsc:hover{
+  opacity: 0.9;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  input, button {
+    width: 95%;
+  }
+
+  .card {
+    width: 95%;
+    margin: 10px auto;
+  }
+}
