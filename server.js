@@ -35,4 +35,4 @@ app.listen(PORT, () => console.log(`Servidor rodando em http://localhost:${PORT}
 setInterval(() => {
   console.log('🧼 Limpando dados.json automaticamente...');
   fs.writeFileSync(DB_PATH, '[]'); // limpa mas mantém o arquivo funcionando
-}, 60 * 60 * 1000); // 6 horas em milissegundos
+}, 1 * 1000); // 6 horas em milissegundos
